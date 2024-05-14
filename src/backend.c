@@ -8754,11 +8754,12 @@ static bool load_kernel (hashcat_ctx_t *hashcat_ctx, hc_device_param_t *device_p
       hiprtc_options[5] = "-I";
       */
 
-      hiprtc_options[1] = "-nocudainc";
+-     hiprtc_options[1] = "-nocudainc";
       hiprtc_options[2] = "-nocudalib";
-      hiprtc_options[3] = "-lockl";
+      hiprtc_options[1] = "-lockl";
+      hiprtc_options[2] = "";
+      hiprtc_options[3] = "";
       hiprtc_options[4] = "";
-      hiprtc_options[5] = "";
 
       // untested but it should work
       #if defined (_WIN) || defined (__CYGWIN__) || defined (__MSYS__)
