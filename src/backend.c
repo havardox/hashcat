@@ -8754,7 +8754,7 @@ static bool load_kernel (hashcat_ctx_t *hashcat_ctx, hc_device_param_t *device_p
       hiprtc_options[5] = "-I";
       */
 
--     hiprtc_options[1] = "-nocudainc";
+      hiprtc_options[1] = "-nocudainc";
       hiprtc_options[2] = "-nocudalib";
       hiprtc_options[1] = "-lockl";
       hiprtc_options[2] = "";
